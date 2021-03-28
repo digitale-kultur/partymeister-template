@@ -16,7 +16,7 @@
 <div class="header" style="width: 100vw; height: 100px;">
     <h1>
         Together
-        <span>Revision 2021 - on a sofa near you</span><br>
+        <span>Revision 2021 - April 2nd to 5th<br>on a sofa near you</span><br>
     </h1>
 </div>
 <div class="grid-container" style="margin-bottom: 8rem;">

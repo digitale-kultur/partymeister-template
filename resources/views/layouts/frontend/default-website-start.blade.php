@@ -16,7 +16,7 @@
 <body>
 <div class="hero" style="width: 100%; height: 100vh;">
     <h1>Together
-        <span>Revision 2021 - on a sofa near you</span><br>
+        <span>Revision 2021 - April 2nd to 5th<br>on a sofa near you</span><br>
         <button class="button success scroll-to-content">Take me there!</button>
     </h1>
 </div>
