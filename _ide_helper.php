@@ -8092,6 +8092,10 @@
             /**
      * 
      *
+     * @method static \Illuminate\Redis\Limiters\ConcurrencyLimiterBuilder funnel(string $name)
+     * @method static \Illuminate\Redis\Limiters\DurationLimiterBuilder throttle(string $name)
+     * @see \Illuminate\Redis\RedisManager
+     * @see \Illuminate\Contracts\Redis\Factory
      */ 
         class Redis {
                     /**
