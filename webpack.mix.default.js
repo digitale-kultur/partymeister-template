@@ -11,6 +11,11 @@ mix.webpackConfig({
     devServer: {
         port: '8079'
     },
+    resolve: {
+        alias: {
+            ziggy: './vendor/tightenco/ziggy/dist',
+        },
+    },
 });
 
 /*
@@ -49,7 +54,7 @@ mix
     .sass('./vendor/partymeister/frontend/resources/assets/sass/partymeister-livevoting.scss', 'public/css')
     .sass('./vendor/partymeister/slides/resources/assets/sass/partymeister-slidemeister-web.scss', 'public/css')
     .sass('./vendor/partymeister/accounting/resources/assets/sass/partymeister-accounting-pos.scss', 'public/css')
-    .sass('resources/assets/sass/partymeister-frontend.scss', 'public/css/motor-frontend.css')
+    .sass('resources/assets/sass/partymeister-frontend.default.scss', 'public/css/motor-frontend.css')
     // APP RESOURCES
     .copy('resources/fonts/*.*', 'public/fonts')
     .copy('resources/assets/images/*.*', 'public/images')

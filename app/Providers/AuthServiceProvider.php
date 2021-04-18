@@ -7,16 +7,12 @@ use Illuminate\Support\Facades\Gate;
 
 class AuthServiceProvider extends ServiceProvider
 {
-
     /**
      * The policy mappings for the application.
      *
      * @var array
      */
-    protected $policies = [
-        'App\Model' => 'App\Policies\ModelPolicy',
-    ];
-
+    protected $policies = [];
 
     /**
      * Register any authentication / authorization services.
@@ -30,7 +26,7 @@ class AuthServiceProvider extends ServiceProvider
         Gate::define('viewWebSocketsDashboard', function ($user = null) {
             return in_array($user->email, [
                 'motor@esmaili.info',
-                'admin@partymeister.org'
+                'admin@partymeister.org',
             ]);
         });
     }

@@ -189,6 +189,9 @@ return [
 		Motor\Revision\Providers\MotorServiceProvider::class,
 
         App\Providers\DuskServiceProvider::class,
+
+        L5Swagger\L5SwaggerServiceProvider::class,
+
     ],
 
     /*
