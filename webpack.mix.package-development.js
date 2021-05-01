@@ -48,9 +48,9 @@ mix
     .js('packages/partymeister-frontend/resources/assets/js/partymeister-frontend/main.js', 'public/js/partymeister-frontend.js')
     .js('packages/partymeister-accounting/resources/assets/js/partymeister-accounting-pos.js', 'public/js/partymeister-accounting-pos.js')
     .js('packages/motor-docs/resources/assets/js/motor-docs.js', 'public/js/motor-docs.js')
-    // .js('resources/assets/js/frontend.js', 'public/js/motor-frontend.js')
-    // .js('packages/partymeister-slides/resources/assets/js/slidemeister/frontend.js', 'public/js/slidemeister.js')
-    // .js('packages/partymeister-slides/resources/assets/js/font-loader.js', 'public/js/slidemeister-font-loader.js')
+    .js('resources/assets/js/frontend.js', 'public/js/motor-frontend.js')
+    .js('packages/partymeister-slides/resources/assets/js/slidemeister/frontend.js', 'public/js/slidemeister.js')
+    .js('packages/partymeister-slides/resources/assets/js/font-loader.js', 'public/js/slidemeister-font-loader.js')
     .vue()
     .sourceMaps()
 

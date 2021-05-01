@@ -44,7 +44,8 @@
     "beyondcode/laravel-websockets": "^1.4",
     "fzaninotto/faker": "^1.9",
     "lavary/laravel-menu": "^1.8",
-    "darkaonline/l5-swagger": "^8.0"
+    "darkaonline/l5-swagger": "^8.0",
+    "barryvdh/laravel-debugbar": "^3.0"
   },
   "repositories": [
   ],
@@ -75,7 +76,7 @@
       "Motor\\Docs\\": "packages/motor-docs/src",
       "Tests\\Motor\\Docs\\": "packages/motor-docs/tests/",
       "Motor\\Revision\\": "packages/motor-revision/src",
-      "Tests\\Revision\\Docs\\": "packages/motor-revision/tests/",
+      "Tests\\Motor\\Revision\\": "packages/motor-revision/tests/",
       "Partymeister\\Frontend\\": "packages/partymeister-frontend/src",
       "Tests\\Partymeister\\Frontend\\": "packages/partymeister-frontend/tests/",
       "Partymeister\\Competitions\\": "packages/partymeister-competitions/src",
