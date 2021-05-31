@@ -3,7 +3,7 @@
 
 /**
  * A helper file for Laravel, to provide autocomplete information to your IDE
- * Generated for Laravel 8.40.0.
+ * Generated for Laravel 8.44.0.
  *
  * This file should not be included in your code, only analyzed by your IDE!
  *
@@ -989,6 +989,7 @@
          * @param \Closure|string|null $concrete
          * @param bool $shared
          * @return void 
+         * @throws \TypeError
          * @static 
          */ 
         public static function bind($abstract, $concrete = null, $shared = false)
@@ -2713,6 +2714,7 @@
          *
          * @param mixed $command
          * @return mixed 
+         * @throws \RuntimeException
          * @static 
          */ 
         public static function dispatchToQueue($command)
@@ -2795,6 +2797,45 @@
         {
                         /** @var \Illuminate\Support\Testing\Fakes\BusFake $instance */
                         $instance->assertNotDispatched($command, $callback);
+        }
+                    /**
+         * Assert if a job was explicitly dispatched synchronously based on a truth-test callback.
+         *
+         * @param string|\Closure $command
+         * @param callable|int|null $callback
+         * @return void 
+         * @static 
+         */ 
+        public static function assertDispatchedSync($command, $callback = null)
+        {
+                        /** @var \Illuminate\Support\Testing\Fakes\BusFake $instance */
+                        $instance->assertDispatchedSync($command, $callback);
+        }
+                    /**
+         * Assert if a job was pushed synchronously a number of times.
+         *
+         * @param string $command
+         * @param int $times
+         * @return void 
+         * @static 
+         */ 
+        public static function assertDispatchedSyncTimes($command, $times = 1)
+        {
+                        /** @var \Illuminate\Support\Testing\Fakes\BusFake $instance */
+                        $instance->assertDispatchedSyncTimes($command, $times);
+        }
+                    /**
+         * Determine if a job was dispatched based on a truth-test callback.
+         *
+         * @param string|\Closure $command
+         * @param callable|null $callback
+         * @return void 
+         * @static 
+         */ 
+        public static function assertNotDispatchedSync($command, $callback = null)
+        {
+                        /** @var \Illuminate\Support\Testing\Fakes\BusFake $instance */
+                        $instance->assertNotDispatchedSync($command, $callback);
         }
                     /**
          * Assert if a job was dispatched after the response was sent based on a truth-test callback.
@@ -2886,6 +2927,19 @@
                         return $instance->dispatched($command, $callback);
         }
                     /**
+         * Get all of the jobs dispatched synchronously matching a truth-test callback.
+         *
+         * @param string $command
+         * @param callable|null $callback
+         * @return \Illuminate\Support\Collection 
+         * @static 
+         */ 
+        public static function dispatchedSync($command, $callback = null)
+        {
+                        /** @var \Illuminate\Support\Testing\Fakes\BusFake $instance */
+                        return $instance->dispatchedSync($command, $callback);
+        }
+                    /**
          * Get all of the jobs dispatched after the response was sent matching a truth-test callback.
          *
          * @param string $command
@@ -2921,6 +2975,18 @@
         {
                         /** @var \Illuminate\Support\Testing\Fakes\BusFake $instance */
                         return $instance->hasDispatched($command);
+        }
+                    /**
+         * Determine if there are any stored commands for a given class.
+         *
+         * @param string $command
+         * @return bool 
+         * @static 
+         */ 
+        public static function hasDispatchedSync($command)
+        {
+                        /** @var \Illuminate\Support\Testing\Fakes\BusFake $instance */
+                        return $instance->hasDispatchedSync($command);
         }
                     /**
          * Determine if there are any stored commands for a given class.
@@ -4652,6 +4718,17 @@
                         return $instance->getName();
         }
                     /**
+         * Get the database connection full name.
+         *
+         * @return string|null 
+         * @static 
+         */ 
+        public static function getNameWithReadWriteType()
+        {            //Method inherited from \Illuminate\Database\Connection         
+                        /** @var \Illuminate\Database\MySqlConnection $instance */
+                        return $instance->getNameWithReadWriteType();
+        }
+                    /**
          * Get an option from the configuration options.
          *
          * @param string|null $option
@@ -4890,6 +4967,18 @@
                         return $instance->setDatabaseName($database);
         }
                     /**
+         * Set the read / write type of the connection.
+         *
+         * @param string|null $readWriteType
+         * @return \Illuminate\Database\MySqlConnection 
+         * @static 
+         */ 
+        public static function setReadWriteType($readWriteType)
+        {            //Method inherited from \Illuminate\Database\Connection         
+                        /** @var \Illuminate\Database\MySqlConnection $instance */
+                        return $instance->setReadWriteType($readWriteType);
+        }
+                    /**
          * Get the table prefix for the connection.
          *
          * @return string 
@@ -5014,6 +5103,7 @@
          *
          * @param callable $callback
          * @return void 
+         * @throws \RuntimeException
          * @static 
          */ 
         public static function afterCommit($callback)
@@ -5405,6 +5495,7 @@
          * @param string $path
          * @param array $data
          * @return mixed 
+         * @throws \Illuminate\Contracts\Filesystem\FileNotFoundException
          * @static 
          */ 
         public static function requireOnce($path, $data = [])
@@ -5560,6 +5651,7 @@
          * @param string $target
          * @param string $link
          * @return void 
+         * @throws \RuntimeException
          * @static 
          */ 
         public static function relativeLink($target, $link)
@@ -5620,6 +5712,7 @@
          *
          * @param string $path
          * @return string|null 
+         * @throws \RuntimeException
          * @static 
          */ 
         public static function guessExtension($path)
@@ -6546,6 +6639,7 @@
          *
          * @param string $locale
          * @return void 
+         * @throws \InvalidArgumentException
          * @static 
          */ 
         public static function setLocale($locale)
@@ -6914,6 +7008,7 @@
          *
          * @param array $config
          * @return \Swift_Transport 
+         * @throws \InvalidArgumentException
          * @static 
          */ 
         public static function createTransport($config)
@@ -9574,7 +9669,7 @@
          * if the proxy is trusted (see "setTrustedProxies()"), otherwise it returns
          * the latter (from the "SERVER_PROTOCOL" server parameter).
          *
-         * @return string 
+         * @return string|null 
          * @static 
          */ 
         public static function getProtocolVersion()
@@ -13899,6 +13994,7 @@
          * @param string $name
          * @param string|null $content
          * @return void 
+         * @throws \InvalidArgumentException
          * @static 
          */ 
         public static function slot($name, $content = null)
@@ -14397,6 +14493,7 @@
          *
          * @param string $type
          * @return void 
+         * @throws \InvalidArgumentException
          * @static 
          */ 
         public static function defaultMorphKeyType($type)
@@ -18528,6 +18625,23 @@ namespace  {
             }
              
                 /**
+             * Paginate the given query into a cursor paginator.
+             *
+             * @param int|null $perPage
+             * @param array $columns
+             * @param string $cursorName
+             * @param string|null $cursor
+             * @return \Illuminate\Contracts\Pagination\Paginator 
+             * @throws \Illuminate\Pagination\CursorPaginationException
+             * @static 
+             */ 
+            public static function cursorPaginate($perPage = null, $columns = [], $cursorName = 'cursor', $cursor = null)
+            {
+                                /** @var \Illuminate\Database\Eloquent\Builder $instance */
+                                return $instance->cursorPaginate($perPage, $columns, $cursorName, $cursor);
+            }
+             
+                /**
              * Save a new model and return the instance.
              *
              * @param array $attributes
@@ -19141,6 +19255,19 @@ namespace  {
             }
              
                 /**
+             * Add subselect queries to include the existence of related models.
+             *
+             * @param string|array $relation
+             * @return \Illuminate\Database\Eloquent\Builder|static 
+             * @static 
+             */ 
+            public static function withExists($relation)
+            {
+                                /** @var \Illuminate\Database\Eloquent\Builder $instance */
+                                return $instance->withExists($relation);
+            }
+             
+                /**
              * Merge the where constraints from another query to the current query.
              *
              * @param \Illuminate\Database\Eloquent\Builder $from
@@ -19199,6 +19326,7 @@ namespace  {
              * @param callable $callback
              * @param int $count
              * @return bool 
+             * @throws \RuntimeException
              * @static 
              */ 
             public static function each($callback, $count = 1000)
@@ -19244,6 +19372,7 @@ namespace  {
              *
              * @param int $chunkSize
              * @return \Illuminate\Support\LazyCollection 
+             * @throws \InvalidArgumentException
              * @static 
              */ 
             public static function lazy($chunkSize = 1000)
@@ -19259,6 +19388,7 @@ namespace  {
              * @param string|null $column
              * @param string|null $alias
              * @return \Illuminate\Support\LazyCollection 
+             * @throws \InvalidArgumentException
              * @static 
              */ 
             public static function lazyById($chunkSize = 1000, $column = null, $alias = null)
@@ -20744,6 +20874,31 @@ namespace  {
             {
                                 /** @var \Illuminate\Database\Query\Builder $instance */
                                 return $instance->sharedLock();
+            }
+             
+                /**
+             * Register a closure to be invoked before the query is executed.
+             *
+             * @param callable $callback
+             * @return \Illuminate\Database\Query\Builder 
+             * @static 
+             */ 
+            public static function beforeQuery($callback)
+            {
+                                /** @var \Illuminate\Database\Query\Builder $instance */
+                                return $instance->beforeQuery($callback);
+            }
+             
+                /**
+             * Invoke the "before query" modification callbacks.
+             *
+             * @return void 
+             * @static 
+             */ 
+            public static function applyBeforeQueryCallbacks()
+            {
+                                /** @var \Illuminate\Database\Query\Builder $instance */
+                                $instance->applyBeforeQueryCallbacks();
             }
              
                 /**
