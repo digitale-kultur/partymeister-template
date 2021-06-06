@@ -179,16 +179,19 @@ return [
         Partymeister\Slides\Providers\PartymeisterServiceProvider::class,
         Partymeister\Competitions\Providers\EventServiceProvider::class,
         Partymeister\Slides\Providers\EventServiceProvider::class,
-        Partymeister\Frontend\Providers\PartymeisterServiceProvider::class,
 
         Motor\Core\Providers\MotorServiceProvider::class,
         Motor\Backend\Providers\MotorServiceProvider::class,
         Motor\Media\Providers\MotorServiceProvider::class,
         Motor\Docs\Providers\MotorDocsServiceProvider::class,
+
+        Partymeister\Frontend\Providers\PartymeisterServiceProvider::class,
         Motor\CMS\Providers\MotorServiceProvider::class,
-		Motor\Revision\Providers\MotorServiceProvider::class,
 
         App\Providers\DuskServiceProvider::class,
+
+        L5Swagger\L5SwaggerServiceProvider::class,
+
     ],
 
     /*
@@ -230,7 +233,7 @@ return [
         'Request'      => Illuminate\Support\Facades\Request::class,
         'Response'     => Illuminate\Support\Facades\Response::class,
         'Route'        => Illuminate\Support\Facades\Route::class,
-//        'Schema'    => Illuminate\Support\Facades\Schema::class,
+        //        'Schema'    => Illuminate\Support\Facades\Schema::class,
         'Schema'       => Culpa\Facades\Schema::class, // we use the culpa schema for easier migrations
         'Session'      => Illuminate\Support\Facades\Session::class,
         'Storage'      => Illuminate\Support\Facades\Storage::class,
