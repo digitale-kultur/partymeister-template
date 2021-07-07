@@ -8,7 +8,9 @@ on:
 jobs:
   deploy-preprod:
     runs-on: ubuntu-latest
-    name: Deploy Preprod
+    name: Deploy Staging
+    environment:
+      name: staging
     steps:
       -   uses: actions/checkout@v2
       -   name: Setup PHP
@@ -21,9 +23,32 @@ jobs:
             mkdir bin
             mv deployer.phar bin/dep
             sudo chmod +x bin/dep
-      -   name: Deploy
+      -   name: Deploy Staging
           uses: deployphp/action@master
           with:
             private-key: ${{ secrets.PRIVATE_KEY }}
             known-hosts: ${{ secrets.KNOWN_HOSTS }}
             dep: deploy -vv --revision=$GITHUB_SHA staging
+  deploy-prod:
+    runs-on: ubuntu-latest
+    name: Deploy Production
+    environment:
+      name: production
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup PHP
+        uses: shivammathur/setup-php@master
+        with:
+          php-version: 7.4
+      - name: Set Up Deployer
+        run: |
+          curl -LO https://deployer.org/deployer.phar
+          mkdir bin
+          mv deployer.phar bin/dep
+          sudo chmod +x bin/dep
+      - name: Deploy Staging
+        uses: deployphp/action@master
+        with:
+          private-key: ${{ secrets.PRIVATE_KEY }}
+          known-hosts: ${{ secrets.KNOWN_HOSTS }}
+          dep: deploy -vv --revision=$GITHUB_SHA production
