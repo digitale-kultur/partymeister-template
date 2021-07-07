@@ -1,0 +1,29 @@
+name: Main
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy-preprod:
+    runs-on: ubuntu-latest
+    name: Deploy Preprod
+    steps:
+      -   uses: actions/checkout@v2
+      -   name: Setup PHP
+          uses: shivammathur/setup-php@master
+          with:
+            php-version: 7.4
+      -   name: Set Up Deployer
+          run: |
+            curl -LO https://deployer.org/deployer.phar
+            mkdir bin
+            mv deployer.phar bin/dep
+            sudo chmod +x bin/dep
+      -   name: Deploy
+          uses: deployphp/action@master
+          with:
+            private-key: ${{ secrets.PRIVATE_KEY }}
+            known-hosts: ${{ secrets.KNOWN_HOSTS }}
+            dep: deploy -vv --revision=$GITHUB_SHA staging
