@@ -12,7 +12,6 @@ set('repository', 'git@github.com:digitale-kultur/partymeister-template.git');
 // [Optional] Allocate tty for git clone. Default value is false.
 set('git_tty', true);
 set('writable_use_sudo', false);
-set('writable_mode', 'chmod');
 set('writable_chmod_mode', '0775');
 
 // Shared files/dirs between deploys
@@ -46,22 +45,14 @@ task('build', function () {
 after('deploy:failed', 'deploy:unlock');
 
 // Migrate database before symlink new release.
-
 before('deploy:symlink', 'artisan:migrate');
 
 
+# due to error message:
+# Unable to prepare route [backend/dashboard] for serialization. Another route has already been assigned name [backend.dashboard.index].
 task('artisan:optimize', function () {});
 
-/**
- * Chown files to correct user
- */
-task('deploy:chown', function () {
-    run('chown -R deploy:www-data ' . get('deploy_path'));
-});
-after('deploy:vendors', 'deploy:chown');
-
-
 task('reload:php-fpm', function () {
-    run('sudo /usr/bin/service php8.0-fpm restart');
+    run('sudo /usr/sbin/service php8.0-fpm restart');
 });
 after('deploy', 'reload:php-fpm');
