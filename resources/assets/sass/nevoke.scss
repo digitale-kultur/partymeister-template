@@ -1,0 +1,55 @@
+$main-color: #00082f;
+$font-color: #fff;
+$highlight-color: #fe3800;
+
+body {
+  background-color: $main-color;
+  color: $font-color;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $font-color !important;
+}
+
+a {
+  color: $highlight-color;
+}
+
+label {
+  color: $font-color;
+}
+
+.button {
+  &.success {
+    color: $font-color;
+    background-color: $highlight-color;
+  }
+}
+
+.top-bar {
+  background-color: $main-color;
+
+  ul {
+    background-color: $main-color;
+
+    li a {
+      color: $highlight-color;
+    }
+  }
+}
+
+.menu {
+  .menu-text {
+    color: $highlight-color;
+  }
+  .active {
+    & > a {
+      background-color: $highlight-color;
+      color: $font-color;
+    }
+  }
+}
+
+.footer {
+  background-color: $main-color;
+}
