@@ -1,0 +1,35 @@
+{
+  "name": "partymeister/core",
+  "description": "Partymeister core package",
+  "license": "MIT",
+  "keywords": [
+    "motor"
+  ],
+  "authors": [
+    {
+      "name": "Reza Esmaili",
+      "email": "me@dfox.info"
+    }
+  ],
+  "require": {
+    "motor-cms/motor-backend": "^1.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "Partymeister\\Core\\": "src",
+      "Tests\\Partymeister\\Core\\": "tests",
+      "Partymeister\\Core\\Database\\Factories\\": "database/factories/",
+      "Partymeister\\Core\\Database\\Seeders\\": "database/seeders/",
+      "SceneOrg\\SceneId\\": "sceneid"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Partymeister\\Core\\Providers\\PartymeisterServiceProvider"
+      ]
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
