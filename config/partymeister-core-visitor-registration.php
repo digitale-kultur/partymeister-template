@@ -23,6 +23,6 @@ return [
 	'sceneid'            => [
 		"clientID"     => "partymeister",
 		"clientSecret" => "XoEYEg9v2FHE936bvWTk5vTQSFjj7YhxJEGwSf1onOwfOnW5J5kGscbtpnnnjBWT",
-		"redirectURI"  => "http://localhost/sceneid"
+		"redirectURI"  => "https://party.xn--nvoke-bsa.eu/sceneid"
 	]
 ];
