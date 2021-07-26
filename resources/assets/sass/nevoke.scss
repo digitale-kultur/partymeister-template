@@ -2,14 +2,40 @@ $main-color: #00082f;
 $font-color: #fff;
 $highlight-color: #fe3800;
 
+@font-face {
+  font-family: MotivaSans;
+  src: url("/fonts/Motiva Sans Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: TisaBold;
+  src: url("/fonts/TisaPro-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: TisaRegular;
+  src: url("/fonts/TisaPro-Regular.otf") format("opentype");
+}
+
+body, p, li, a {
+  font-family: TisaRegular, serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: MotivaSans;
+  color: $font-color !important;
+}
+
+b {
+  font-family: TisaBold;
+}
+
 body {
   background-color: $main-color;
   color: $font-color;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  color: $font-color !important;
-}
+
 
 a {
   color: $highlight-color;
@@ -41,6 +67,12 @@ label {
 .menu {
   .menu-text {
     color: $highlight-color;
+    background-image: url("/images/nevoke.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 20px;
+    background-position: center;
+    width: 200px;
   }
   .active {
     & > a {

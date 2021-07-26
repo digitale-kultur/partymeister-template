@@ -11,7 +11,17 @@ const { env } = require('minimist')(process.argv.slice(2));
  | file for the application as well as bundling up all the JS files.
  |
  */
-
+mix.webpackConfig({
+    resolve: {
+        modules: [
+            'node_modules',
+            'vendor/tightenco',
+            'resources/assets/js',
+            'packages'
+        ],
+        extensions: [".webpack.js", ".web.js", ".js", ".json", ".less", ".vue"]
+    }
+});
 /* do stuff with mix that's common to all sites, like maybe mix.options() */
 
 // load site-specific config
