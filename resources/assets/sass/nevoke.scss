@@ -80,7 +80,7 @@ label {
 
 .menu {
   & .is-active > a {
-    background: #00082f;
+    background: $highlight-color;
   }
   .menu-text {
     color: $highlight-color;
