@@ -9749,7 +9749,8 @@ ul.vertical.menu li a {
 }
 body, p, li, a {
   font-family: TisaRegular, serif;
-  padding: 1.5rem;
+  padding-left: 1.5rem;
+  padding-top: 0.5rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
