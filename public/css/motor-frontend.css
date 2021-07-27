@@ -9802,7 +9802,7 @@ label {
   padding-right: 50px;
 }
 
-.menu.is-active > a {
+.menu .is-active > a {
   background: #00082f;
 }
 .menu .menu-text {

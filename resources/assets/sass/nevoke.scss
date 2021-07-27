@@ -79,7 +79,7 @@ label {
 }
 
 .menu {
-  &.is-active > a {
+  & .is-active > a {
     background: #00082f;
   }
   .menu-text {
