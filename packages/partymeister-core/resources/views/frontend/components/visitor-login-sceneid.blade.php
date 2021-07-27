@@ -61,34 +61,6 @@
         </li>
     </ul>
 </form>
-<div class="cables" style="margin-top: 20px;">
-  <script type="text/javascript" src="{{ url('/cables/js/patch.js') }}" async></script>
-  <script>
-    document.addEventListener('CABLES.jsLoaded', function(event) {
-      CABLES.patch = new CABLES.Patch({
-        patch: CABLES.exportedPatch,
-        prefixAssetPath: "{{ url('/cables') }}/",
-        glCanvasId: 'glcanvas',
-        glCanvasResizeToWindow: false,
-        variables: {
-          "handle":"{{$visitor->name}}"
-        }
-      });
-      document.getElementById("glcanvas").addEventListener("click", function() {
-        console.log("hepp");
-        CABLES.patch.restart();
-      });
-    });
-  </script>
-  <div class="cablestext">
-    Download your custom avatar by<br/>
-    clicking on the image.<br/><br/>
-    Use it everywhere!
-  </div>
-  <div class="cablespatch">
-    <canvas id="glcanvas" style="cursor:pointer; width: 100%;"></canvas>
-  </div>
-</div>
 @endif
 
 @section('view-scripts')
