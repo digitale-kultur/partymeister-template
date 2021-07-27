@@ -37,7 +37,7 @@ class ConfigVariablesTableSeeder extends Seeder
             'package'    => 'motor-backend',
             'group'      => 'motor-backend-project',
             'name'       => 'name_frontend',
-            'value'      => 'Random Demoparty',
+            'value'      => 'névoke',
             'created_by' => User::get()->first()->id,
             'updated_by' => User::get()->first()->id,
         ]);
@@ -46,7 +46,7 @@ class ConfigVariablesTableSeeder extends Seeder
             'package'    => 'partymeister-competitions',
             'group'      => 'partymeister-competitions-voting',
             'name'       => 'deadline',
-            'value'      => '2019-12-31 23:59:59',
+            'value'      => '2021-08-15 00:00:00',
             'created_by' => User::get()->first()->id,
             'updated_by' => User::get()->first()->id,
         ]);
