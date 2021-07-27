@@ -64,6 +64,14 @@ label {
   }
 }
 
+.title-bar {
+  display: none;
+}
+
+.main-content {
+  padding-right: 50px;
+}
+
 .menu {
   .menu-text {
     color: $highlight-color;
