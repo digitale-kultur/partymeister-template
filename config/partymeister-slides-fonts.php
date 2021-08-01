@@ -24,7 +24,7 @@ return [
         ],
         [
             'name'   => 'Blackpearl',
-            'path'   => '/fonts/tisabold.css',
+            'path'   => '/fonts/tisalight.css',
             'family' => '\'Blackpearl\''
         ],
         [
