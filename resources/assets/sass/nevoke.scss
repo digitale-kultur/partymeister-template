@@ -41,6 +41,10 @@ body {
 .card {
   background: $main-color;
 
+  .card-section {
+    color: $font-color;
+  }
+
   .button.primary {
     background-color: $secondary-highlight-color;
     color: $main-color;
