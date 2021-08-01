@@ -9768,7 +9768,11 @@ body {
 }
 
 .card {
-  background: #fe3800;
+  background: #00082f;
+}
+.card .button.primary {
+  background-color: #00D68F;
+  color: #00082f;
 }
 
 a {
@@ -9780,8 +9784,8 @@ label {
 }
 
 .button.success {
-  color: #fff;
-  background-color: #fe3800;
+  background-color: #00D68F;
+  color: #00082f;
 }
 
 .top-bar {

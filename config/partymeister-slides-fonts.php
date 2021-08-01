@@ -19,17 +19,17 @@ return [
 	    ],
         [
             'name'   => 'exo2',
-            'path'   => '/fonts/exo2.css',
+            'path'   => '/fonts/motivasans.css',
             'family' => '\'Exo 2\''
         ],
         [
             'name'   => 'Blackpearl',
-            'path'   => '/fonts/blackpearl.css',
+            'path'   => '/fonts/tisabold.css',
             'family' => '\'Blackpearl\''
         ],
         [
             'name'   => 'Booterfz',
-            'path'   => '/fonts/booterfz.css',
+            'path'   => '/fonts/tisaregular.css',
             'family' => '\'Booterfz\''
         ],
     ],

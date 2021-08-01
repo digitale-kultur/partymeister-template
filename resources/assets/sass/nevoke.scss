@@ -1,6 +1,7 @@
 $main-color: #00082f;
 $font-color: #fff;
 $highlight-color: #fe3800;
+$secondary-highlight-color: #00D68F;
 
 @font-face {
   font-family: MotivaSans;
@@ -38,10 +39,13 @@ body {
 }
 
 .card {
-  background: #fe3800;
+  background: $main-color;
+
+  .button.primary {
+    background-color: $secondary-highlight-color;
+    color: $main-color;
+  }
 }
-
-
 
 a {
   color: $highlight-color;
@@ -53,8 +57,8 @@ label {
 
 .button {
   &.success {
-    color: $font-color;
-    background-color: $highlight-color;
+    background-color: $secondary-highlight-color;
+    color: $main-color;
   }
 }
 

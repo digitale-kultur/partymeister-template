@@ -6,7 +6,7 @@
 
     <title>Live Voting</title>
 
-    <link rel="stylesheet" href="{{mix('css/partymeister-livevoting.css')}}">
+    <link rel="stylesheet" href="{{mix('/css/motor-frontend.css')}}">
     @yield('view_styles')
     <style type="text/css">
     </style>
