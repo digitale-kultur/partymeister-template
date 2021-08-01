@@ -9751,6 +9751,10 @@ body, p, li, a {
   font-family: TisaRegular, serif;
 }
 
+.partymeister-rating-wrapper, .special-vote-highlight {
+  color: #00D68F;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: MotivaSans;
   color: #fff !important;

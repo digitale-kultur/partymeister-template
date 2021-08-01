@@ -22,6 +22,10 @@ body, p, li, a {
   font-family: TisaRegular, serif;
 }
 
+.partymeister-rating-wrapper, .special-vote-highlight {
+  color: $secondary-highlight-color;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: MotivaSans;
   color: $font-color !important;
