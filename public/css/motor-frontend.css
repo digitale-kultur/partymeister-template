@@ -9756,7 +9756,7 @@ body, p, li, a {
 }
 
 .partymeister-rating-wrapper, .special-vote-highlight {
-  color: #00D68F;
+  background-color: #00D68F;
 }
 
 h1, h2, h3, h4, h5, h6 {
