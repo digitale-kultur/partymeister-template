@@ -24,6 +24,12 @@ body, p, li, a {
 
 #live-voting {
   margin-right: 20px;
+
+  .card {
+    .section {
+      padding: 10px;
+    }
+  }
 }
 
 .partymeister-rating-wrapper, .special-vote-highlight {
