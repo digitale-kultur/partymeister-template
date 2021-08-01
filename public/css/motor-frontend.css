@@ -9751,6 +9751,10 @@ body, p, li, a {
   font-family: TisaRegular, serif;
 }
 
+#live-voting {
+  margin-right: 5px;
+}
+
 .partymeister-rating-wrapper, .special-vote-highlight {
   color: #00D68F;
 }
