@@ -7,4 +7,4 @@ return [
         //'NI' => 'Niger',
         //'VI' => 'U.S. Virgin Islands'
     ]
-];git checkout -b partymeister-master mastergit checkout -b partymeister-master master
+];
