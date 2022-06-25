@@ -3,8 +3,8 @@
 return [
     'currency'              => 'EUR',
     'localize_number_words' => 'de',
-    'issued_by'             => 'Tastatur und Maus e.V., Landstraße 35, 69502 Hemsbach',
-    'issued_in'             => 'Saarbrücken',
+    'issued_by'             => 'Digitale Kultur e.V., Christinastrasse 82, 50733 Köln',
+    'issued_in'             => 'Köln',
 
     'localization' => [
         'receipt'   => 'Quittung / Receipt',
