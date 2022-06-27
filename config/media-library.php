@@ -12,7 +12,7 @@ return [
      * The maximum file size of an item in bytes.
      * Adding a larger file will result in an exception.
      */
-    'max_file_size' => 1024 * 1024 * 10,
+    'max_file_size' => 1024 * 1024 * 10 * 10 * 10,
 
     /*
      * This queue will be used to generate derived and responsive images.
@@ -132,7 +132,7 @@ return [
      * The engine that should perform the image conversions.
      * Should be either `gd` or `imagick`.
      */
-    'image_driver' => env('IMAGE_DRIVER', 'imagick'),
+    'image_driver' => env('IMAGE_DRIVER', 'gd'),
 
     /*
      * FFMPEG & FFProbe binaries paths, only used if you try to generate video
