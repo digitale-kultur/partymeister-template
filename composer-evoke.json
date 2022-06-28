@@ -80,6 +80,10 @@
         {
             "type": "vcs",
             "url": "https://github.com/digitale-kultur/partymeister-competitions"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/digitale-kultur/partymeister-frontend"
         }
     ]
 }
