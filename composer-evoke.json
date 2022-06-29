@@ -10,12 +10,12 @@
         "ext-json": "*",
         "fzaninotto/faker": "^1.9",
         "lavary/laravel-menu": "1.8.1",
-        "motor-cms/motor-backend": "^1.0",
-        "motor-cms/motor-cms": "^1.0",
-        "motor-cms/motor-core": "^1.0",
-        "motor-cms/motor-docs": "^1.0",
-        "motor-cms/motor-media": "^1.0",
-        "motor-cms/motor-revision": "*",
+        "motor-cms/motor-backend": "dev-master as 1.1.5",
+        "motor-cms/motor-cms": "dev-master as 1.1.1",
+        "motor-cms/motor-core": "dev-master as 1.1.5",
+        "motor-cms/motor-docs": "dev-master as 1.1.0",
+        "motor-cms/motor-media": "dev-master as 1.1.3",
+        "motor-cms/motor-revision": "dev-master as 1.1.1",
         "partymeister/accounting": "^1.0",
         "partymeister/competitions": "dev-evoke2022 as 1.1.10",
         "partymeister/core": "dev-evoke2022 as 1.1.3",
@@ -84,6 +84,26 @@
         {
             "type": "vcs",
             "url": "https://github.com/digitale-kultur/partymeister-frontend"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/motor-cms/motor-backend"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/motor-cms/motor-cms"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/motor-cms/motor-core"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/motor-cms/motor-docs"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/motor-cms/motor-media"
         }
     ]
 }
