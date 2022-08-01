@@ -1,1 +1,106 @@
 /* evoke 2022 */
+
+:root {
+  --green: #60f806;
+  --dark-grey: #333;
+  --light-grey: #aaa;
+  --yellow: #faff00;
+  --cyan: #00ffff;
+  --white: #fff;
+  --purple: #6100ff;
+}
+
+body {
+  background-color: var(--dark-grey);
+  font-family: "IBM Plex Sans", sans-serif !important;
+  color: var(--light-grey);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+li,
+p {
+  font-family: "IBM Plex Sans", sans-serif !important;
+}
+a {
+  transition: none !important;
+}
+
+a:focus,
+a:hover {
+  color: var(--green) !important;
+}
+
+.title-bar {
+  background-color: var(--dark-grey);
+}
+
+.top-bar,
+.top-bar ul {
+  background-color: var(--dark-grey) !important;
+}
+
+.sticky-topbar {
+  border-bottom: 1px solid #666;
+}
+
+.top-bar a,
+.menu-text {
+  text-transform: none !important;
+}
+
+.menu .active > a {
+  background: var(--green);
+  color: var(--dark-grey) !important;
+}
+
+.button,
+.button.primary,
+.button.success {
+  background-color: var(--purple);
+  color: var(--white);
+  transition: none !important;
+  text-transform: none !important;
+  font-weight: 700;
+}
+
+.button:hover,
+.button.primary:hover,
+.button.success:hover {
+  color: var(--dark-grey) !important;
+  background-color: var(--white) !important;
+}
+
+label {
+  color: var(--light-grey);
+}
+
+.footer {
+  background-color: var(--green);
+  color: var(--dark-grey);
+}
+
+.callout a {
+  color: var(--dark-grey) !important;
+  text-decoration: underline;
+}
+
+.callout.primary {
+  background-color: var(--white);
+  color: var(--dark-grey);
+}
+
+.callout.warning {
+  background-color: var(--yellow);
+  color: var(--dark-grey);
+}
+
+.callout.success {
+  background-color: var(--green);
+  color: var(--dark-grey);
+}
