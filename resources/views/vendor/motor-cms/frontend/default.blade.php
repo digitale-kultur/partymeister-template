@@ -4,20 +4,23 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>{{$version->name}} | {{config('motor-backend-project.name_frontend')}}</title>
+    <title>PAGE TITLE</title>
 
     <link href="{{ mix('/css/motor-frontend.css') }}" rel="stylesheet" type="text/css"/>
     <link href="/css/evoke2022.css" rel="stylesheet" type="text/css"/>
-    @yield('view-styles')
+
+    <!-- Custom styles for this template -->
+    @yield('view_styles')
+    <style type="text/css">
+    </style>
 </head>
 <body>
 @include('motor-cms::layouts.frontend.partials.navigation')
-<div class="grid-container" style="margin-bottom: 8rem; margin-top: 1rem;">
+<div class="grid-container">
     @include('motor-cms::layouts.frontend.partials.template-sections', ['rows' => $template['items']])
 </div>
-<div class="columns shrink footer text-center" style="position: fixed; bottom: 0; width: 100%;">
-</div>
-<script src="{{mix('js/partymeister-frontend.js')}}"></script>
+
+<script src="{{mix('js/motor-frontend.js')}}"></script>
 @yield('view-scripts')
 <script>
     $(document).foundation();
