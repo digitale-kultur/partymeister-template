@@ -1,5 +1,5 @@
 <?php
 
 return [
-    'name' => 'Revision 2022 PARTYNET',
+    'name' => 'Evoke 2022 PARTYNET',
 ];
