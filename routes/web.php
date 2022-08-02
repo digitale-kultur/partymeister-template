@@ -14,3 +14,8 @@
 Route::get('/', static function () {
     return redirect('/start');
 });
+
+Route::get('backend/competition_prizes_export/labels', 'Backend\CompetitionPrizes\LabelExportController@pdf')
+    ->name('backend.competition_prizes.export.labels')
+    ->middleware(['web', 'web_auth', 'navigation']);
+
