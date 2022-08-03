@@ -4,10 +4,8 @@ namespace App\Http\Controllers\Backend\CompetitionPrizes;
 
 use App\Competitions\PDF\PrizeLabel;
 use Motor\Backend\Http\Controllers\Controller;
-use Partymeister\Competitions\Http\Requests\Backend\CompetitionPrizeRequest;
 use Partymeister\Competitions\Models\Competition;
 use Partymeister\Competitions\Models\Entry;
-use Partymeister\Competitions\PDF\Prize;
 use Partymeister\Competitions\Services\VoteService;
 use Symfony\Component\HttpFoundation\StreamedResponse;
 
@@ -52,6 +50,7 @@ class LabelExportController extends Controller
             }
         }
 
+        // add some more labels for debug
         for ($i=0; $i<20; $i++) {
             $pdf->addSingleLabel($c, $e, $prize);
         }
@@ -59,12 +58,12 @@ class LabelExportController extends Controller
         // Send the file content as the response
         /*
         return response()->streamDownload(function () use ($pdf) {
-            echo $pdf->Output('empty-receipt.pdf', 'S');
+            echo $pdf->Output('prize-labels.pdf', 'S');
             $pdf->Close();
-        }, 'empty-receipt.pdf');
+        }, 'prize-labels.pdf');
         */
         return response()->stream(function () use ($pdf) {
-            echo $pdf->Output('empty-receipt.pdf', 'S');
+            echo $pdf->Output('prize-labels.pdf', 'S');
             $pdf->Close();
         }, 200, ['Content-Type' => 'application/pdf']);
     }
