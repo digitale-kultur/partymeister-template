@@ -50,21 +50,10 @@ class LabelExportController extends Controller
             }
         }
 
-        // add some more labels for debug
-        for ($i=0; $i<20; $i++) {
-            $pdf->addSingleLabel($c, $e, $prize);
-        }
-
         // Send the file content as the response
-        /*
         return response()->streamDownload(function () use ($pdf) {
             echo $pdf->Output('prize-labels.pdf', 'S');
             $pdf->Close();
         }, 'prize-labels.pdf');
-        */
-        return response()->stream(function () use ($pdf) {
-            echo $pdf->Output('prize-labels.pdf', 'S');
-            $pdf->Close();
-        }, 200, ['Content-Type' => 'application/pdf']);
     }
 }
