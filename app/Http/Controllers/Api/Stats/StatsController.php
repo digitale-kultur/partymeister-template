@@ -13,9 +13,6 @@ use Symfony\Component\HttpFoundation\StreamedResponse;
 
 class StatsController extends Controller
 {
-    /**
-     * @return StreamedResponse
-     */
     public function visitors()
     {
         $total = 0;
