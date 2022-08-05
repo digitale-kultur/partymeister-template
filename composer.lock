@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1aad6e5c9a1228c034fd530dbba3e788",
+    "content-hash": "bc3abe595b2d03b916ab4dc2c7365b68",
     "packages": [
         {
             "name": "alchemy/binary-driver",
@@ -10927,6 +10927,47 @@
             "time": "2021-12-08T09:12:39+00:00"
         },
         {
+            "name": "uskur/pdf-label",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Uskur/PdfLabel.git",
+                "reference": "6e61618aa9af292e95866ac7bc362042b28459a2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Uskur/PdfLabel/zipball/6e61618aa9af292e95866ac7bc362042b28459a2",
+                "reference": "6e61618aa9af292e95866ac7bc362042b28459a2",
+                "shasum": ""
+            },
+            "require": {
+                "tecnickcom/tcpdf": "^6.2"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Uskur\\PdfLabel\\": "/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Burak USGURLU",
+                    "email": "burak@uskur.com.tr"
+                }
+            ],
+            "description": "TCPDF Class to print labels in Avery or custom formats",
+            "support": {
+                "issues": "https://github.com/Uskur/PdfLabel/issues",
+                "source": "https://github.com/Uskur/PdfLabel/tree/master"
+            },
+            "time": "2019-03-02T18:45:15+00:00"
+        },
+        {
             "name": "vlucas/phpdotenv",
             "version": "v5.4.1",
             "source": {
@@ -11336,7 +11377,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "uskur/pdf-label": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
