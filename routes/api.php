@@ -18,6 +18,8 @@ Route::get('/user', static function (Request $request) {
     return $request->user();
 })->middleware('auth:api');
 
+Route::get('stats/visitors', 'Api\Stats\StatsController@visitors')
+    ->name('api.stats.visitors');
 
 /*
 Route::post('callback/announcement', function() {
