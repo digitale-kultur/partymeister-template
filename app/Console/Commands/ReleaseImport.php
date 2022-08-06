@@ -71,7 +71,10 @@ class ReleaseImport extends Command
             $this->comment('Filename: ' . $filename);
 
             $entry = new Entry();
-            $media = $entry->addMediaFromUrl($uri)->setFileName($filename)->toMediaCollection('file');
+            $media = $entry
+                ->addMediaFromString($response->getBody()->getContents())
+                ->setFileName($filename)
+                ->toMediaCollection('file', 'media');
             $entry->competition_id = $compo->first()->id;
             $entry->title = $data[3];
             $entry->author = $data[4] . ' / ' . $data[5];
