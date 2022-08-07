@@ -12,6 +12,6 @@ return [
         'SpaceY' => 0,
         'width' => 105,
         'height' => 57,
-        'cutLines' => true
+        'cutLines' => false
     )
 ];

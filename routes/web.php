@@ -15,7 +15,11 @@ Route::get('/', static function () {
     return redirect('/start');
 });
 
-Route::get('backend/competition_prizes_export/labels', 'Backend\CompetitionPrizes\LabelExportController@pdf')
+Route::get('backend/competition_labels/prize_money', 'Backend\CompetitionLabels\ExportController@prizeMoney')
+    ->name('backend.competition_prizes.export.labels')
+    ->middleware(['web', 'web_auth', 'navigation']);
+
+Route::get('backend/competition_labels/competition_ranks', 'Backend\CompetitionLabels\ExportController@competitionRanks')
     ->name('backend.competition_prizes.export.labels')
     ->middleware(['web', 'web_auth', 'navigation']);
 
