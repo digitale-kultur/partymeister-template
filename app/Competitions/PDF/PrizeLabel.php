@@ -16,15 +16,26 @@ class PrizeLabel extends PdfLabel
         $this->addPage();
     }
 
-    public function addSingleLabel(Competition $competition, Entry $entry, CompetitionPrize $prize)
+    public function addPrizeMoneyLabel(Competition $competition, Entry $entry, CompetitionPrize $prize)
     {
-        $this->addHtmlLabel(view('backend/competition_prizes/pdf/label', [
+        $this->addHtmlLabel(view('backend/competition_labels/pdf/prize_money', [
             'competition_name' => $competition->name,
             'rank' => $prize->rank,
             'entry_title' => $entry->title,
             'entry_author' => $entry->author,
             'prize_amount' => $prize->amount,
             'prize_currency' => config('partymeister-competitions-receipt.currency')
+        ]));
+    }
+
+    public function addCompetitionRankLabel(Competition $competition, int $rank)
+    {
+        $rankTranslate = [1 => 'First', '2' => 'Second', '3' => 'Third'];
+
+        $this->addHtmlLabel(view('backend/competition_labels/pdf/competition_ranks', [
+            'competition_name' => $competition->name,
+            'rank' => $rank,
+            'rank_text' => $rankTranslate[$rank] ?? ''
         ]));
     }
 }
