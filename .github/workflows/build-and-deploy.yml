@@ -2,7 +2,7 @@ name: build-and-deploy
 on:
   push:
     branches:
-      - main
+      - revision-2023
 jobs:
   deploy:
     runs-on: ubuntu-20.04
@@ -28,7 +28,7 @@ jobs:
         with:
           # list of Docker images to use as base name for tags
           images: |
-            dfox288/revision-pm-website
+            dfox288/partymeister-revision-2023
           # generate Docker tags based on the following events/attributes
           tags: |
             type=schedule
@@ -45,7 +45,7 @@ jobs:
           file: docker/Dockerfile
           platforms: linux/amd64
           push: ${{ github.event_name != 'pull_request' }}
-          tags: ${{ github.repository }}:latest, ${{ github.repository }}:${{ github.sha }}
+          tags: partymeister-revision-2023:latest, partymeister-revision-2023:${{ github.sha }}
           labels: ${{ github.sha }}
 
       - name: Trigger k8s deploy
@@ -57,7 +57,7 @@ jobs:
           files_to_update="pm.revision-party.net/revision-pm-website-deployment.yaml"
           echo $files_to_update
           for file in $files_to_update; do
-          repo=dfox288/revision-pm-website
+          repo=dfox288/partymeister-revision-2023
           sed -i "s/${repo//\//\\/}:.*/${repo//\//\\/}:${{ github.sha }}/g" $file;
           done
           git config --global user.email "info@tastatur-und-maus.net"
