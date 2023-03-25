@@ -42,11 +42,10 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           context: .
-          file: docker/Dockerfile
           platforms: linux/amd64
           push: ${{ github.event_name != 'pull_request' }}
-          tags: partymeister-revision-2023:latest, partymeister-revision-2023:${{ github.sha }}
-          labels: ${{ github.sha }}
+          tags: ${{ steps.meta_php8.outputs.tags }}
+          labels: ${{ steps.meta_php8.outputs.labels }}
 
       - name: Trigger k8s deploy
         run: |
