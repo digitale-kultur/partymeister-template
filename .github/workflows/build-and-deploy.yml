@@ -30,6 +30,7 @@ jobs:
           images: |
             dfox288/partymeister-revision-2023
           # generate Docker tags based on the following events/attributes
+          # generate Docker tags based on the following events/attributes
           tags: |
             type=schedule
             type=ref,event=branch
@@ -42,6 +43,7 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           context: .
+          file: docker/Dockerfile
           platforms: linux/amd64
           push: ${{ github.event_name != 'pull_request' }}
           tags: ${{ steps.meta_php8.outputs.tags }}
