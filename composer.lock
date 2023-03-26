@@ -3881,16 +3881,16 @@
         },
         {
             "name": "motor-cms/motor-cms",
-            "version": "1.4.4",
+            "version": "1.4.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/motor-cms/motor-cms.git",
-                "reference": "5c0d716baeb5bcf46554a3f5dce0f77e81b281a7"
+                "reference": "965e7377cdbfe6fcbf095f4c9c07e4f3c403bad0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/motor-cms/motor-cms/zipball/5c0d716baeb5bcf46554a3f5dce0f77e81b281a7",
-                "reference": "5c0d716baeb5bcf46554a3f5dce0f77e81b281a7",
+                "url": "https://api.github.com/repos/motor-cms/motor-cms/zipball/965e7377cdbfe6fcbf095f4c9c07e4f3c403bad0",
+                "reference": "965e7377cdbfe6fcbf095f4c9c07e4f3c403bad0",
                 "shasum": ""
             },
             "require": {
@@ -3929,9 +3929,9 @@
             ],
             "support": {
                 "issues": "https://github.com/motor-cms/motor-cms/issues",
-                "source": "https://github.com/motor-cms/motor-cms/tree/1.4.4"
+                "source": "https://github.com/motor-cms/motor-cms/tree/1.4.5"
             },
-            "time": "2023-03-25T23:35:43+00:00"
+            "time": "2023-03-26T09:25:30+00:00"
         },
         {
             "name": "motor-cms/motor-core",
@@ -4818,16 +4818,16 @@
         },
         {
             "name": "partymeister/core",
-            "version": "1.4.4",
+            "version": "1.4.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/partymeister/partymeister-core.git",
-                "reference": "c63b6c8fb123fcaf7449bc42468b746278e4901b"
+                "reference": "3b71669c76a07edb46ca71bebfa5a49da4fe2c94"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/partymeister/partymeister-core/zipball/c63b6c8fb123fcaf7449bc42468b746278e4901b",
-                "reference": "c63b6c8fb123fcaf7449bc42468b746278e4901b",
+                "url": "https://api.github.com/repos/partymeister/partymeister-core/zipball/3b71669c76a07edb46ca71bebfa5a49da4fe2c94",
+                "reference": "3b71669c76a07edb46ca71bebfa5a49da4fe2c94",
                 "shasum": ""
             },
             "require": {
@@ -4865,9 +4865,9 @@
             ],
             "support": {
                 "issues": "https://github.com/partymeister/partymeister-core/issues",
-                "source": "https://github.com/partymeister/partymeister-core/tree/1.4.4"
+                "source": "https://github.com/partymeister/partymeister-core/tree/1.4.5"
             },
-            "time": "2023-03-25T23:36:44+00:00"
+            "time": "2023-03-26T09:26:01+00:00"
         },
         {
             "name": "partymeister/frontend",
