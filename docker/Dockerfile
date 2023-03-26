@@ -7,4 +7,4 @@ RUN cp .env.example .env
 RUN composer install --no-dev
 RUN php artisan key:generate
 
-CMD cd /app && php artisan storage:link && service supervisor start && php-fpm
+CMD service supervisor start && php-fpm
