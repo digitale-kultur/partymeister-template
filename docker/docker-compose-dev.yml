@@ -7,7 +7,7 @@ services:
     environment:
       APP_ENV: development
       APP_NAME: partymeister # do not change
-      APP_URL: https://exampleparty.partymeister.org # adjust to the real url (with https) before going live
+      APP_URL: http://localhost # adjust to the real url (with https) before going live
       APP_URL_INTERNAL: http://nginx # used for internal communication between the containers. only change if the container name is changed as well
       APP_DEBUG: "true" # set to false for production
       APP_LOG_LEVEL: debug # can stay the same, logs will appear in /storage/logs
@@ -32,10 +32,10 @@ services:
       PUSHER_PATH: # do not change
       PUSHER_PORT: 6001 # do not change unless you also change the nginx configuration which maps this port to /socket
       PUSHER_SCHEME: http # actually not quite sure if this should stay the same or not...
-      PUSHER_HOST_EXTERNAL: exampleparty.partymeister.org # change this to APP_URL (without http/https)
+      PUSHER_HOST_EXTERNAL: localhost # change this to APP_URL (without http/https)
       PUSHER_PATH_EXTERNAL: /socket # do not change unless you also change the nginx config
-      PUSHER_PORT_EXTERNAL: 443 # change this to 443 if you use a ssl proxy
-      PUSHER_SCHEME_EXTERNAL: https # change this to https if you use a ssl proxy
+      PUSHER_PORT_EXTERNAL: 80 # change this to 443 if you use a ssl proxy
+      PUSHER_SCHEME_EXTERNAL: http # change this to https if you use a ssl proxy
       DEBUGBAR_ENABLED: "false"
 
     restart: unless-stopped

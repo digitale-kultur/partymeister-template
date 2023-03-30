@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "21f0be5d7e8ba5e4c6925c24daf32b1d",
+    "content-hash": "1595df06e7fe49d45a925e8c5c926ef2",
     "packages": [
         {
             "name": "beyondcode/laravel-websockets",
@@ -4046,6 +4046,61 @@
                 "source": "https://github.com/motor-cms/motor-media/tree/1.4.4"
             },
             "time": "2023-03-25T23:36:00+00:00"
+        },
+        {
+            "name": "motor-cms/motor-revision",
+            "version": "1.4.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/motor-cms/motor-revision.git",
+                "reference": "ece5ae5078cbdcbd0b160849fb47e08ff6983b8f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/motor-cms/motor-revision/zipball/ece5ae5078cbdcbd0b160849fb47e08ff6983b8f",
+                "reference": "ece5ae5078cbdcbd0b160849fb47e08ff6983b8f",
+                "shasum": ""
+            },
+            "require": {
+                "motor-cms/motor-backend": "^1.4",
+                "php": "^8.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Motor\\Revision\\Providers\\MotorServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Motor\\Revision\\": "src",
+                    "Tests\\Motor\\Revision\\": "tests"
+                },
+                "classmap": [
+                    "database"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Reza Esmaili",
+                    "email": "me@dfox.info"
+                }
+            ],
+            "description": "Motor Revision module",
+            "keywords": [
+                "motor"
+            ],
+            "support": {
+                "issues": "https://github.com/motor-cms/motor-revision/issues",
+                "source": "https://github.com/motor-cms/motor-revision/tree/1.4.4"
+            },
+            "time": "2023-03-25T23:35:52+00:00"
         },
         {
             "name": "myclabs/php-enum",

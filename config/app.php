@@ -183,10 +183,10 @@ return [
         Motor\Core\Providers\MotorServiceProvider::class,
         Motor\Backend\Providers\MotorServiceProvider::class,
         Motor\Media\Providers\MotorServiceProvider::class,
+        Motor\Revision\Providers\MotorServiceProvider::class,
         //Motor\Docs\Providers\MotorDocsServiceProvider::class,
 
         Motor\CMS\Providers\MotorServiceProvider::class,
-        //Motor\Revision\Providers\MotorServiceProvider::class,
 
         App\Providers\DuskServiceProvider::class,
     ],
