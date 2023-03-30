@@ -4815,16 +4815,16 @@
         },
         {
             "name": "partymeister/competitions",
-            "version": "1.4.6",
+            "version": "1.4.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/partymeister/partymeister-competitions.git",
-                "reference": "32cfc2dea50d2a7179c1c7f943eb18233148c2c2"
+                "reference": "2e85fe51ffd669ed7cfa24dc488bf824f302cb8d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/partymeister/partymeister-competitions/zipball/32cfc2dea50d2a7179c1c7f943eb18233148c2c2",
-                "reference": "32cfc2dea50d2a7179c1c7f943eb18233148c2c2",
+                "url": "https://api.github.com/repos/partymeister/partymeister-competitions/zipball/2e85fe51ffd669ed7cfa24dc488bf824f302cb8d",
+                "reference": "2e85fe51ffd669ed7cfa24dc488bf824f302cb8d",
                 "shasum": ""
             },
             "require": {
@@ -4867,22 +4867,22 @@
             ],
             "support": {
                 "issues": "https://github.com/partymeister/partymeister-competitions/issues",
-                "source": "https://github.com/partymeister/partymeister-competitions/tree/1.4.6"
+                "source": "https://github.com/partymeister/partymeister-competitions/tree/1.4.8"
             },
-            "time": "2023-03-29T20:09:58+00:00"
+            "time": "2023-03-30T14:04:55+00:00"
         },
         {
             "name": "partymeister/core",
-            "version": "1.4.6",
+            "version": "1.4.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/partymeister/partymeister-core.git",
-                "reference": "025b1be710416e49e09355f7b43209af2ab7f421"
+                "reference": "45a2decd611359ac5559e10cdf12504437429d31"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/partymeister/partymeister-core/zipball/025b1be710416e49e09355f7b43209af2ab7f421",
-                "reference": "025b1be710416e49e09355f7b43209af2ab7f421",
+                "url": "https://api.github.com/repos/partymeister/partymeister-core/zipball/45a2decd611359ac5559e10cdf12504437429d31",
+                "reference": "45a2decd611359ac5559e10cdf12504437429d31",
                 "shasum": ""
             },
             "require": {
@@ -4920,9 +4920,9 @@
             ],
             "support": {
                 "issues": "https://github.com/partymeister/partymeister-core/issues",
-                "source": "https://github.com/partymeister/partymeister-core/tree/1.4.6"
+                "source": "https://github.com/partymeister/partymeister-core/tree/1.4.8"
             },
-            "time": "2023-03-29T20:10:50+00:00"
+            "time": "2023-03-30T14:05:22+00:00"
         },
         {
             "name": "partymeister/frontend",
@@ -4980,16 +4980,16 @@
         },
         {
             "name": "partymeister/slides",
-            "version": "1.4.4",
+            "version": "1.4.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/partymeister/partymeister-slides.git",
-                "reference": "36934af478b06ce15f34cf830e83f09ce2cb45a1"
+                "reference": "429601bd6ee6697d7f178d825c55ac81ff0f255d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/partymeister/partymeister-slides/zipball/36934af478b06ce15f34cf830e83f09ce2cb45a1",
-                "reference": "36934af478b06ce15f34cf830e83f09ce2cb45a1",
+                "url": "https://api.github.com/repos/partymeister/partymeister-slides/zipball/429601bd6ee6697d7f178d825c55ac81ff0f255d",
+                "reference": "429601bd6ee6697d7f178d825c55ac81ff0f255d",
                 "shasum": ""
             },
             "require": {
@@ -5029,9 +5029,9 @@
             ],
             "support": {
                 "issues": "https://github.com/partymeister/partymeister-slides/issues",
-                "source": "https://github.com/partymeister/partymeister-slides/tree/1.4.4"
+                "source": "https://github.com/partymeister/partymeister-slides/tree/1.4.5"
             },
-            "time": "2023-03-25T23:37:06+00:00"
+            "time": "2023-03-30T14:05:49+00:00"
         },
         {
             "name": "php-console/php-console",
@@ -7356,16 +7356,16 @@
         },
         {
             "name": "spatie/laravel-medialibrary",
-            "version": "10.7.15",
+            "version": "10.7.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-medialibrary.git",
-                "reference": "20f083354e3933af87f9b4c550c06897e4a2ed56"
+                "reference": "4fabfc58e08ee53586a613b18b8879049132e526"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-medialibrary/zipball/20f083354e3933af87f9b4c550c06897e4a2ed56",
-                "reference": "20f083354e3933af87f9b4c550c06897e4a2ed56",
+                "url": "https://api.github.com/repos/spatie/laravel-medialibrary/zipball/4fabfc58e08ee53586a613b18b8879049132e526",
+                "reference": "4fabfc58e08ee53586a613b18b8879049132e526",
                 "shasum": ""
             },
             "require": {
@@ -7373,7 +7373,7 @@
                 "ext-fileinfo": "*",
                 "ext-json": "*",
                 "illuminate/bus": "^9.18|^10.0",
-                "illuminate/conditionable": "9.18|^10.0",
+                "illuminate/conditionable": "^9.18|^10.0",
                 "illuminate/console": "^9.18|^10.0",
                 "illuminate/database": "^9.18|^10.0",
                 "illuminate/pipeline": "^9.18|^10.0",
@@ -7449,7 +7449,7 @@
             ],
             "support": {
                 "issues": "https://github.com/spatie/laravel-medialibrary/issues",
-                "source": "https://github.com/spatie/laravel-medialibrary/tree/10.7.15"
+                "source": "https://github.com/spatie/laravel-medialibrary/tree/10.7.16"
             },
             "funding": [
                 {
@@ -7461,7 +7461,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-03-29T12:36:16+00:00"
+            "time": "2023-03-30T07:51:35+00:00"
         },
         {
             "name": "spatie/laravel-package-tools",
@@ -11368,16 +11368,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "1.10.8",
+            "version": "1.10.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "0166aef76e066f0dd2adc2799bdadfa1635711e9"
+                "reference": "9b13dafe3d66693d20fe5729c3dde1d31bb64703"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/0166aef76e066f0dd2adc2799bdadfa1635711e9",
-                "reference": "0166aef76e066f0dd2adc2799bdadfa1635711e9",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/9b13dafe3d66693d20fe5729c3dde1d31bb64703",
+                "reference": "9b13dafe3d66693d20fe5729c3dde1d31bb64703",
                 "shasum": ""
             },
             "require": {
@@ -11426,7 +11426,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-03-24T10:28:16+00:00"
+            "time": "2023-03-30T08:58:01+00:00"
         },
         {
             "name": "pimple/pimple",
