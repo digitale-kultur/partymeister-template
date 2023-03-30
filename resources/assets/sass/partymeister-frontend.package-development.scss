@@ -131,11 +131,11 @@ ul.vertical.menu li a {
 }
 
 .button.success, .button.success.disabled, .button.success[disabled], .button.success.disabled:hover, .button.success[disabled]:hover, .button.success.disabled:focus, .button.success[disabled]:focus {
-  background-color: #138788;
+  background-color: #fa8000;
 }
 
 .button.success, .button.primary {
-  background-color: #138788;
+  background-color: #fa8000;
   color: white;
   text-transform: uppercase;
 }
@@ -159,7 +159,7 @@ a:hover {
 
 a:focus,
 a:hover {
-  color: #138788;
+  color: #fa8000;
 }
 .main-content, .sidebar-content {
   padding: 0 10px;
@@ -180,7 +180,7 @@ a:hover {
 
 .menu > .active > a,
 .menu > .is-active > a {
-  background-color: #138788;
+  background-color: #fa8000;
 }
 
 .card {
