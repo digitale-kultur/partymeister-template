@@ -4873,16 +4873,16 @@
         },
         {
             "name": "partymeister/core",
-            "version": "1.4.11",
+            "version": "1.4.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/partymeister/partymeister-core.git",
-                "reference": "fb99974a462f659face1631361f540b39da4bdf2"
+                "reference": "3464acb840ea119d56f38d142ec0f223fbe7528a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/partymeister/partymeister-core/zipball/fb99974a462f659face1631361f540b39da4bdf2",
-                "reference": "fb99974a462f659face1631361f540b39da4bdf2",
+                "url": "https://api.github.com/repos/partymeister/partymeister-core/zipball/3464acb840ea119d56f38d142ec0f223fbe7528a",
+                "reference": "3464acb840ea119d56f38d142ec0f223fbe7528a",
                 "shasum": ""
             },
             "require": {
@@ -4920,9 +4920,9 @@
             ],
             "support": {
                 "issues": "https://github.com/partymeister/partymeister-core/issues",
-                "source": "https://github.com/partymeister/partymeister-core/tree/1.4.11"
+                "source": "https://github.com/partymeister/partymeister-core/tree/1.4.12"
             },
-            "time": "2023-03-31T15:13:06+00:00"
+            "time": "2023-03-31T21:48:34+00:00"
         },
         {
             "name": "partymeister/frontend",
