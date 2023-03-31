@@ -23,7 +23,7 @@ services:
       REDIS_PASSWORD: password # please change this, also in the redis container
       QUEUE_CONNECTION: redis
       REDIS_PORT: 6379
-      SESSION_DRIVER: redis
+      SESSION_DRIVER: database
 
       PUSHER_APP_ID: 12345 # change if needed
       PUSHER_APP_KEY: 12345 # change if needed
