@@ -5041,16 +5041,16 @@
         },
         {
             "name": "partymeister/accounting",
-            "version": "1.4.4",
+            "version": "1.4.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/partymeister/partymeister-accounting.git",
-                "reference": "8ccd05c1eebb2f7f0ac44e327165639d08d162d6"
+                "reference": "7fbfc301864b620cf00f51c292e80de519a3e9ff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/partymeister/partymeister-accounting/zipball/8ccd05c1eebb2f7f0ac44e327165639d08d162d6",
-                "reference": "8ccd05c1eebb2f7f0ac44e327165639d08d162d6",
+                "url": "https://api.github.com/repos/partymeister/partymeister-accounting/zipball/7fbfc301864b620cf00f51c292e80de519a3e9ff",
+                "reference": "7fbfc301864b620cf00f51c292e80de519a3e9ff",
                 "shasum": ""
             },
             "require": {
@@ -5089,9 +5089,9 @@
             ],
             "support": {
                 "issues": "https://github.com/partymeister/partymeister-accounting/issues",
-                "source": "https://github.com/partymeister/partymeister-accounting/tree/1.4.4"
+                "source": "https://github.com/partymeister/partymeister-accounting/tree/1.4.6"
             },
-            "time": "2023-03-25T23:36:11+00:00"
+            "time": "2023-04-01T22:50:43+00:00"
         },
         {
             "name": "partymeister/competitions",
