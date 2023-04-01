@@ -30,6 +30,7 @@ class Kernel extends ConsoleKernel
         $schedule->command('partymeister:frontend:cache-photowall')->everyFiveMinutes();
         $schedule->command('partymeister:core:import:tickets:api')->everyFiveMinutes();
         $schedule->command('partymeister:core:import:timetable')->everyFiveMinutes();
+        $schedule->command('motor:media:sync-to-s3')->everyFiveMinutes()->withoutOverlapping();
     }
 
     /**
