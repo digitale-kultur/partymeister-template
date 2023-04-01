@@ -4014,16 +4014,16 @@
         },
         {
             "name": "motor-cms/motor-backend",
-            "version": "1.4.8",
+            "version": "1.4.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/motor-cms/motor-backend.git",
-                "reference": "e3b951d6373430ddf3afbba9a21714d7c9270d96"
+                "reference": "be841f52f8598e685ddbc8ccae03be23b7b2f910"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/motor-cms/motor-backend/zipball/e3b951d6373430ddf3afbba9a21714d7c9270d96",
-                "reference": "e3b951d6373430ddf3afbba9a21714d7c9270d96",
+                "url": "https://api.github.com/repos/motor-cms/motor-backend/zipball/be841f52f8598e685ddbc8ccae03be23b7b2f910",
+                "reference": "be841f52f8598e685ddbc8ccae03be23b7b2f910",
                 "shasum": ""
             },
             "require": {
@@ -4093,9 +4093,9 @@
             ],
             "support": {
                 "issues": "https://github.com/motor-cms/motor-backend/issues",
-                "source": "https://github.com/motor-cms/motor-backend/tree/1.4.8"
+                "source": "https://github.com/motor-cms/motor-backend/tree/1.4.9"
             },
-            "time": "2023-04-01T17:17:09+00:00"
+            "time": "2023-04-01T17:38:37+00:00"
         },
         {
             "name": "motor-cms/motor-cms",
