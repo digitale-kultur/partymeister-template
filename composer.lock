@@ -4014,16 +4014,16 @@
         },
         {
             "name": "motor-cms/motor-backend",
-            "version": "1.4.7",
+            "version": "1.4.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/motor-cms/motor-backend.git",
-                "reference": "229ee9bee774df2b1449b44afe5ab66b8e1cc674"
+                "reference": "e3b951d6373430ddf3afbba9a21714d7c9270d96"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/motor-cms/motor-backend/zipball/229ee9bee774df2b1449b44afe5ab66b8e1cc674",
-                "reference": "229ee9bee774df2b1449b44afe5ab66b8e1cc674",
+                "url": "https://api.github.com/repos/motor-cms/motor-backend/zipball/e3b951d6373430ddf3afbba9a21714d7c9270d96",
+                "reference": "e3b951d6373430ddf3afbba9a21714d7c9270d96",
                 "shasum": ""
             },
             "require": {
@@ -4093,9 +4093,9 @@
             ],
             "support": {
                 "issues": "https://github.com/motor-cms/motor-backend/issues",
-                "source": "https://github.com/motor-cms/motor-backend/tree/1.4.7"
+                "source": "https://github.com/motor-cms/motor-backend/tree/1.4.8"
             },
-            "time": "2023-03-31T21:25:33+00:00"
+            "time": "2023-04-01T17:17:09+00:00"
         },
         {
             "name": "motor-cms/motor-cms",
@@ -4212,16 +4212,16 @@
         },
         {
             "name": "motor-cms/motor-media",
-            "version": "1.4.5",
+            "version": "1.4.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/motor-cms/motor-media.git",
-                "reference": "7b3071cc82731fd84d7ddbd72288bdca63d80f92"
+                "reference": "091a86b7dff36091dac3c353a4c0a185ab491475"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/motor-cms/motor-media/zipball/7b3071cc82731fd84d7ddbd72288bdca63d80f92",
-                "reference": "7b3071cc82731fd84d7ddbd72288bdca63d80f92",
+                "url": "https://api.github.com/repos/motor-cms/motor-media/zipball/091a86b7dff36091dac3c353a4c0a185ab491475",
+                "reference": "091a86b7dff36091dac3c353a4c0a185ab491475",
                 "shasum": ""
             },
             "require": {
@@ -4262,9 +4262,9 @@
             ],
             "support": {
                 "issues": "https://github.com/motor-cms/motor-media/issues",
-                "source": "https://github.com/motor-cms/motor-media/tree/1.4.5"
+                "source": "https://github.com/motor-cms/motor-media/tree/1.4.6"
             },
-            "time": "2023-04-01T16:43:43+00:00"
+            "time": "2023-04-01T17:17:34+00:00"
         },
         {
             "name": "motor-cms/motor-revision",
@@ -5095,16 +5095,16 @@
         },
         {
             "name": "partymeister/competitions",
-            "version": "1.4.10",
+            "version": "1.4.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/partymeister/partymeister-competitions.git",
-                "reference": "2658a286ad55557537806cfa652e474138ec6989"
+                "reference": "f586587199c650815b8ff6ecd33012efaca0c405"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/partymeister/partymeister-competitions/zipball/2658a286ad55557537806cfa652e474138ec6989",
-                "reference": "2658a286ad55557537806cfa652e474138ec6989",
+                "url": "https://api.github.com/repos/partymeister/partymeister-competitions/zipball/f586587199c650815b8ff6ecd33012efaca0c405",
+                "reference": "f586587199c650815b8ff6ecd33012efaca0c405",
                 "shasum": ""
             },
             "require": {
@@ -5147,9 +5147,9 @@
             ],
             "support": {
                 "issues": "https://github.com/partymeister/partymeister-competitions/issues",
-                "source": "https://github.com/partymeister/partymeister-competitions/tree/1.4.10"
+                "source": "https://github.com/partymeister/partymeister-competitions/tree/1.4.11"
             },
-            "time": "2023-03-31T21:26:04+00:00"
+            "time": "2023-04-01T17:18:17+00:00"
         },
         {
             "name": "partymeister/core",
@@ -11648,16 +11648,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "1.10.9",
+            "version": "1.10.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "9b13dafe3d66693d20fe5729c3dde1d31bb64703"
+                "reference": "f1e22c9b17a879987f8743d81533250a5fff47f9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/9b13dafe3d66693d20fe5729c3dde1d31bb64703",
-                "reference": "9b13dafe3d66693d20fe5729c3dde1d31bb64703",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/f1e22c9b17a879987f8743d81533250a5fff47f9",
+                "reference": "f1e22c9b17a879987f8743d81533250a5fff47f9",
                 "shasum": ""
             },
             "require": {
@@ -11706,7 +11706,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-03-30T08:58:01+00:00"
+            "time": "2023-04-01T17:06:15+00:00"
         },
         {
             "name": "pimple/pimple",
