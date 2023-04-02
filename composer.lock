@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1595df06e7fe49d45a925e8c5c926ef2",
+    "content-hash": "32e1ea529f8673baeed6b8e561d2ee10",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -5041,16 +5041,16 @@
         },
         {
             "name": "partymeister/accounting",
-            "version": "1.4.6",
+            "version": "1.4.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/partymeister/partymeister-accounting.git",
-                "reference": "7fbfc301864b620cf00f51c292e80de519a3e9ff"
+                "reference": "bfe6df4e323d534993e5c88971de3979da500c59"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/partymeister/partymeister-accounting/zipball/7fbfc301864b620cf00f51c292e80de519a3e9ff",
-                "reference": "7fbfc301864b620cf00f51c292e80de519a3e9ff",
+                "url": "https://api.github.com/repos/partymeister/partymeister-accounting/zipball/bfe6df4e323d534993e5c88971de3979da500c59",
+                "reference": "bfe6df4e323d534993e5c88971de3979da500c59",
                 "shasum": ""
             },
             "require": {
@@ -5089,9 +5089,9 @@
             ],
             "support": {
                 "issues": "https://github.com/partymeister/partymeister-accounting/issues",
-                "source": "https://github.com/partymeister/partymeister-accounting/tree/1.4.6"
+                "source": "https://github.com/partymeister/partymeister-accounting/tree/1.4.7"
             },
-            "time": "2023-04-01T22:50:43+00:00"
+            "time": "2023-04-02T19:17:14+00:00"
         },
         {
             "name": "partymeister/competitions",
@@ -12397,7 +12397,8 @@
         "ext-json": "*",
         "ext-zip": "*",
         "ext-zlib": "*",
-        "ext-gd": "*"
+        "ext-gd": "*",
+        "ext-pdo": "*"
     },
     "platform-dev": [],
     "plugin-api-version": "2.3.0"
