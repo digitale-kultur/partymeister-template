@@ -5095,16 +5095,16 @@
         },
         {
             "name": "partymeister/competitions",
-            "version": "1.4.11",
+            "version": "1.4.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/partymeister/partymeister-competitions.git",
-                "reference": "f586587199c650815b8ff6ecd33012efaca0c405"
+                "reference": "991e5209c1d014cc94345d4a424f47a0054a4455"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/partymeister/partymeister-competitions/zipball/f586587199c650815b8ff6ecd33012efaca0c405",
-                "reference": "f586587199c650815b8ff6ecd33012efaca0c405",
+                "url": "https://api.github.com/repos/partymeister/partymeister-competitions/zipball/991e5209c1d014cc94345d4a424f47a0054a4455",
+                "reference": "991e5209c1d014cc94345d4a424f47a0054a4455",
                 "shasum": ""
             },
             "require": {
@@ -5147,9 +5147,9 @@
             ],
             "support": {
                 "issues": "https://github.com/partymeister/partymeister-competitions/issues",
-                "source": "https://github.com/partymeister/partymeister-competitions/tree/1.4.11"
+                "source": "https://github.com/partymeister/partymeister-competitions/tree/1.4.12"
             },
-            "time": "2023-04-01T17:18:17+00:00"
+            "time": "2023-04-02T21:16:53+00:00"
         },
         {
             "name": "partymeister/core",
