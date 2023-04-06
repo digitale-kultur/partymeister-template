@@ -2,7 +2,7 @@
     <div class="contain">
         <div class="top-bar-left">
             <ul class="dropdown menu" data-dropdown-menu>
-                <li class="menu-text">{{config('motor-cms-frontend.name')}}</li>
+                <li class="menu-text" style="{{config('motor-cms-frontend.style')}}">{{config('motor-cms-frontend.name')}}</li>
                 @foreach($navigationItems as $item)
                     @if ($item->is_visible && $item->is_active)
                         <li class=" @if($activeNavigationSlugs[0] == $item->full_slug) active @endif">
@@ -23,7 +23,7 @@
                 @foreach($activeNavigationItem->ancestors as $item)
                     @if (!$loop->first)
                         <li>
-                            <a style="{{config('motor-cms-frontend.style')}}" href="{{ route('frontend.pages.index', ['slug' => $item->full_slug])}}">{{$item->name}}</a>
+                            <a href="{{ route('frontend.pages.index', ['slug' => $item->full_slug])}}">{{$item->name}}</a>
                         </li>
                     @endif
                 @endforeach
