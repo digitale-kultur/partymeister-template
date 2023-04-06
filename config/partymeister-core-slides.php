@@ -2,6 +2,6 @@
 
 return [
     'timetable' => [
-        'slide_type' => 'announce',
+        'slide_type' => 'timetable',
     ],
 ];
