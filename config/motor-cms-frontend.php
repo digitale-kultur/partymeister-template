@@ -1,5 +1,5 @@
 <?php
 
 return [
-    'name' => 'Revision 2022 PARTYNET',
+    'name' => env('MOTOR_CMS_FRONTEND_NAME', 'motor-cms'),
 ];
