@@ -1,4 +1,4 @@
-@extends('motor-backend::vendor.motor-cms.layouts.backend')
+@extends('motor-backend::layouts.backend')
 
 @section('htmlheader_title')
     {{ trans('motor-backend::backend/global.home') }}
@@ -9,13 +9,13 @@
     @if (has_permission('files.write'))
         {!! link_to_route('backend.files.create', trans('motor-media::backend/files.new'), [], ['class' => 'float-right btn btn-sm btn-success']) !!}
     @endif
-    @include('partymeister-slides::vendor.motor-cms.layouts.partials.slide_clients_controls')
+    @include('partymeister-slides::layouts.partials.slide_clients_controls')
 @endsection
 
 @section('main-content')
     <div class="@boxWrapper">
         <div class="@boxHeader">
-            @include('motor-backend::vendor.motor-cms.layouts.partials.search')
+            @include('motor-backend::layouts.partials.search')
         </div>
         <!-- /.box-header -->
         @if (isset($grid))
@@ -24,7 +24,7 @@
     </div>
 @endsection
 
-@include('partymeister-slides::vendor.motor-cms.layouts.partials.slide_clients_scripts')
+@include('partymeister-slides::layouts.partials.slide_clients_scripts')
 @section('view_scripts')
     <script type="text/javascript">
         $('.delete-record').click(function (e) {
