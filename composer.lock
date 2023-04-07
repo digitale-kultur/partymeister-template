@@ -5260,16 +5260,16 @@
         },
         {
             "name": "partymeister/slides",
-            "version": "1.4.13",
+            "version": "1.4.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/partymeister/partymeister-slides.git",
-                "reference": "e221d494fb440bef5071c9c9735dedca39698dd8"
+                "reference": "f0d67fb9b915dc2c482ffd05332b0d472dbb9dbd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/partymeister/partymeister-slides/zipball/e221d494fb440bef5071c9c9735dedca39698dd8",
-                "reference": "e221d494fb440bef5071c9c9735dedca39698dd8",
+                "url": "https://api.github.com/repos/partymeister/partymeister-slides/zipball/f0d67fb9b915dc2c482ffd05332b0d472dbb9dbd",
+                "reference": "f0d67fb9b915dc2c482ffd05332b0d472dbb9dbd",
                 "shasum": ""
             },
             "require": {
@@ -5309,9 +5309,9 @@
             ],
             "support": {
                 "issues": "https://github.com/partymeister/partymeister-slides/issues",
-                "source": "https://github.com/partymeister/partymeister-slides/tree/1.4.13"
+                "source": "https://github.com/partymeister/partymeister-slides/tree/1.4.14"
             },
-            "time": "2023-04-07T16:07:22+00:00"
+            "time": "2023-04-07T16:50:27+00:00"
         },
         {
             "name": "php-console/php-console",
