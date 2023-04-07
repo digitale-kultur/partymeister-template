@@ -4014,16 +4014,16 @@
         },
         {
             "name": "motor-cms/motor-backend",
-            "version": "1.4.11",
+            "version": "1.4.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/motor-cms/motor-backend.git",
-                "reference": "589c56722aea2fb38ba9d436ee1a4615f1a38740"
+                "reference": "0b84ae2cbfcfd5350f1ee2a91dfa50e4c97903ad"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/motor-cms/motor-backend/zipball/589c56722aea2fb38ba9d436ee1a4615f1a38740",
-                "reference": "589c56722aea2fb38ba9d436ee1a4615f1a38740",
+                "url": "https://api.github.com/repos/motor-cms/motor-backend/zipball/0b84ae2cbfcfd5350f1ee2a91dfa50e4c97903ad",
+                "reference": "0b84ae2cbfcfd5350f1ee2a91dfa50e4c97903ad",
                 "shasum": ""
             },
             "require": {
@@ -4093,9 +4093,9 @@
             ],
             "support": {
                 "issues": "https://github.com/motor-cms/motor-backend/issues",
-                "source": "https://github.com/motor-cms/motor-backend/tree/1.4.11"
+                "source": "https://github.com/motor-cms/motor-backend/tree/1.4.14"
             },
-            "time": "2023-04-07T11:34:02+00:00"
+            "time": "2023-04-07T11:54:17+00:00"
         },
         {
             "name": "motor-cms/motor-cms",
@@ -4212,16 +4212,16 @@
         },
         {
             "name": "motor-cms/motor-media",
-            "version": "1.4.7",
+            "version": "1.4.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/motor-cms/motor-media.git",
-                "reference": "a26a189dbb7ae12b6c3c457c3f5cfcae64740f0c"
+                "reference": "954d7943649147d1769aed58d2b3e495ac67b4ae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/motor-cms/motor-media/zipball/a26a189dbb7ae12b6c3c457c3f5cfcae64740f0c",
-                "reference": "a26a189dbb7ae12b6c3c457c3f5cfcae64740f0c",
+                "url": "https://api.github.com/repos/motor-cms/motor-media/zipball/954d7943649147d1769aed58d2b3e495ac67b4ae",
+                "reference": "954d7943649147d1769aed58d2b3e495ac67b4ae",
                 "shasum": ""
             },
             "require": {
@@ -4262,9 +4262,9 @@
             ],
             "support": {
                 "issues": "https://github.com/motor-cms/motor-media/issues",
-                "source": "https://github.com/motor-cms/motor-media/tree/1.4.7"
+                "source": "https://github.com/motor-cms/motor-media/tree/1.4.8"
             },
-            "time": "2023-04-07T11:34:35+00:00"
+            "time": "2023-04-07T11:53:46+00:00"
         },
         {
             "name": "motor-cms/motor-revision",
@@ -5260,16 +5260,16 @@
         },
         {
             "name": "partymeister/slides",
-            "version": "1.4.10",
+            "version": "1.4.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/partymeister/partymeister-slides.git",
-                "reference": "d46f0906b1a338521b896446a5cb6c5f75dda869"
+                "reference": "68d5942f4634ac898fa5b69f0d17fc26df187f63"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/partymeister/partymeister-slides/zipball/d46f0906b1a338521b896446a5cb6c5f75dda869",
-                "reference": "d46f0906b1a338521b896446a5cb6c5f75dda869",
+                "url": "https://api.github.com/repos/partymeister/partymeister-slides/zipball/68d5942f4634ac898fa5b69f0d17fc26df187f63",
+                "reference": "68d5942f4634ac898fa5b69f0d17fc26df187f63",
                 "shasum": ""
             },
             "require": {
@@ -5309,9 +5309,9 @@
             ],
             "support": {
                 "issues": "https://github.com/partymeister/partymeister-slides/issues",
-                "source": "https://github.com/partymeister/partymeister-slides/tree/1.4.10"
+                "source": "https://github.com/partymeister/partymeister-slides/tree/1.4.11"
             },
-            "time": "2023-04-07T11:35:54+00:00"
+            "time": "2023-04-07T11:55:12+00:00"
         },
         {
             "name": "php-console/php-console",
