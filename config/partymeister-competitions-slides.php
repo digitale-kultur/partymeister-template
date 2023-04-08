@@ -2,7 +2,7 @@
 
 return [
     'video_1'             => [
-        'duration'             => 53,
+        'duration'             => 46,
         'transition'           => 1,
         'transition_duration'  => 500,
         'is_advanced_manually' => 0,
@@ -13,14 +13,14 @@ return [
         'transition'           => 1,
         'transition_duration'  => 2000,
         'is_advanced_manually' => 1,
-        'midi_note'            => 101,
+        'midi_note'            => 104,
     ],
     'video_3'             => [
-        'duration'             => 100,
+        'duration'             => 30,
         'transition'           => 1,
         'transition_duration'  => 500,
         'is_advanced_manually' => 0,
-        'midi_note'            => 0,
+        'midi_note'            => 101,
     ],
     'entries'             => [
         'slide_type' => 'announce',
