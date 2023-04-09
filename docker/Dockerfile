@@ -14,4 +14,4 @@ RUN crontab /tmp/crontab-www-data
 
 USER root
 
-CMD service supervisor start && service cron start && php-fpm
+CMD service supervisor start && php-fpm
