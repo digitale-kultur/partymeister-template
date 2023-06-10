@@ -15,6 +15,8 @@ in every of these: git checkout evoke2023
 ./update-dev.sh
 ./dump-autoload-dev.sh
 
+goto: http://localhost:10082
+
 ## maybe
 
 start chrome webdriver in container:
