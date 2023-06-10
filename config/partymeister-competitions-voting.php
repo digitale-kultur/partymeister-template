@@ -2,5 +2,5 @@
 
 return [
     'party_has_voting' => true,
-    'deadline' => '2022-08-07 09:00:00'
+    'deadline' => '2023-07-30 09:00:00'
 ];
