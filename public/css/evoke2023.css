@@ -27,6 +27,24 @@ li,
 p {
     font-family: "IBM Plex Sans", sans-serif !important;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 500 !important;
+}
+
+li {
+    font-weight: 500 !important;
+}
+
+p {
+    font-weight: 400 !important;
+}
+
 a {
     transition: none !important;
 }
@@ -52,6 +70,7 @@ a:hover {
 .top-bar a,
 .menu-text {
     text-transform: none !important;
+    font-weight: 500 !important;
 }
 
 .menu .active > a {
@@ -78,11 +97,18 @@ a:hover {
 
 label {
     color: var(--light-grey);
+    font-weight: 500 !important;
 }
 
 .footer {
     background-color: var(--green);
     color: var(--dark-grey);
+    display: none !important;
+}
+
+.callout,
+.callout a {
+    font-weight: 500 !important;
 }
 
 .callout a {
