@@ -3,6 +3,26 @@
 return [
     'fonts' => [
         [
+            'name'   => 'obviabook',
+            'path'   => '/fonts/obvia.css',
+            'family' => '\'obviabook\'',
+        ],
+        [
+            'name'   => 'obvia_condensedblack',
+            'path'   => '/fonts/obvia.css',
+            'family' => '\'obvia_condensedblack\'',
+        ],
+        [
+            'name'   => 'obvia_condensedmedium',
+            'path'   => '/fonts/obvia.css',
+            'family' => '\'obvia_condensedmedium\'',
+        ],
+        [
+            'name'   => 'obvia_widethin',
+            'path'   => '/fonts/obvia.css',
+            'family' => '\'obvia_widethin\'',
+        ],
+        [
             'name'   => 'exo2',
             'path'   => '/fonts/exo2.css',
             'family' => '\'Exo 2\'',
