@@ -77,8 +77,9 @@ a:hover {
   font-weight: 500 !important;
 }
 
-.menu .active > a {
-  background: var(--accent-1);
+.menu .active > a,
+.menu .is-active > a {
+  background: var(--accent-1) !important;
   color: var(--dark-blue) !important;
 }
 
