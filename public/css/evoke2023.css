@@ -146,3 +146,22 @@ label {
 .text-danger {
   color: var(--accent-4) !important;
 }
+
+div[data-partymeister-slides-prettyname="background"] {
+        background-image: url('/slide-background.png') !important;
+}
+
+div[data-partymeister-slides-prettyname="competition"]::before {
+  position: absolute;
+  width: 50px;
+  height: 4px;
+  content: "";
+  right: 10px;
+  top: 0;
+  background-color: #14cfe8;
+  border-radius: 4px;
+}
+
+div[data-partymeister-slides-prettyname="panel"] {
+  border-bottom: 2px solid #14cfe8;
+}
