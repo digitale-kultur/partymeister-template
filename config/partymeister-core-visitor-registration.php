@@ -7,7 +7,7 @@ return [
         //'NI' => 'Niger',
         //'VI' => 'U.S. Virgin Islands'
     ],
-    'password_reset_from_email' => 'hotline-2023@revision-party.net',
-    'password_reset_from_name' => 'Revision',
-    'password_reset_subject_prefix' => '[Revision 2023] ',
+    'password_reset_from_email' => 'partymeister@digitalekultur.org',
+    'password_reset_from_name' => 'Evoke',
+    'password_reset_subject_prefix' => '[Evoke 2023] ',
 ];
